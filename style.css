@@ -116,6 +116,7 @@ img.img-small {
   padding: 2em;
   color: #fff;
   text-align: center;
+  min-height: 300px;
 }
 .box h2 {
   height: 100px;
