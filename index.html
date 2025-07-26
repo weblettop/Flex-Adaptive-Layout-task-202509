@@ -12,20 +12,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="showcase" class="flexbox">
-      <div class="bg-image"></div>
-      <div class="content-wrap">
-        <h1>Welcome to Acme Web Solutions</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum
-          error earum soluta voluptatum nisi laboriosam eos saepe asperiores
-          dolorum.
-        </p>
-        <a href="#section-b" class="btn">Read More</a>
+    <header>
+      <div id="showcase" class="flexbox">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+          <h1>Welcome to Acme Web Solutions</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+            eum error earum soluta voluptatum nisi laboriosam eos saepe
+            asperiores dolorum.
+          </p>
+          <a href="#section-b" class="btn">Read More</a>
+        </div>
       </div>
-    </header>
-    <!-- Main Area -->
-    <main class="main">
       <!-- Section A-->
       <section id="section-a" class="flexbox">
         <div class="content-wrap">
@@ -42,65 +41,64 @@
           </content-text>
         </div>
       </section>
+    </header>
+    <!-- Main Area -->
+    <main class="main">
       <!-- Section B -->
       <section id="section-b" class="flexbox">
         <div class="content-wrap">
           <ul class="flexbox">
             <li>
-              <div>
-                <div class="card-content">
-                  <h3 class="card-title">Web Development</h3>
-                  <img src="img/02big.jpg" alt="" />
-                  <img
-                    class="img-small"
-                    src="img/01small.jpg"
-                    alt=""
-                  />
+              <div class="card-content">
+                <picture>
+                  <source srcset="/img/01small.jpg" media="(max-width:700px)" />
+                  <img src="/img/01big.jpg" />
+                </picture>
 
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nostrum culpa neque quo eum et quasi velit voluptatum cum
-                    maiores exercitationem.
-                  </p>
-                </div>
+                
+                <h3 class="card-title">Web Development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum culpa neque quo eum et quasi velit voluptatum cum
+                  maiores exercitationem.
+                </p>
+              </div>
+            </li>
+                        <li>
+              <div class="card-content">
+                <picture>
+                  <source srcset="/img/02small.jpg" media="(max-width:700px)" />
+                  <img src="/img/02big.jpg" />
+                </picture>
+
+                
+                <h3 class="card-title">Mobile Applications</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum culpa neque quo eum et quasi velit voluptatum cum
+                  maiores exercitationem.
+                </p>
               </div>
             </li>
             <li>
-              <div>
-                <div class="card-content">
-                  <h3 class="card-title">Mobile Applications</h3>
-                  <img src="img/02big.jpg" alt="" />
-                  <img
-                    class="img-small"
-                    src="img/01small.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nostrum culpa neque quo eum et quasi velit voluptatum cum
-                    maiores exercitationem.
-                  </p>
-                </div>
+              <div class="card-content">
+                <picture>
+                  <source srcset="/img/03small.jpg" media="(max-width:700px)" />
+                  <img src="/img/03big.jpg" />
+                </picture>
+
+                
+                <h3 class="card-title">Tech Marketing</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum culpa neque quo eum et quasi velit voluptatum cum
+                  maiores exercitationem.
+                </p>
               </div>
             </li>
-            <li>
-              <div>
-                <div class="card-content">
-                  <h3 class="card-title">Tech Marketing</h3>
-                  <img src="img/02big.jpg" alt="" />
-                  <img
-                    class="img-small"
-                    src="img/01small.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nostrum culpa neque quo eum et quasi velit voluptatum cum
-                    maiores exercitationem.
-                  </p>
-                </div>
-              </div>
-            </li>
+
+
+
           </ul>
         </div>
       </section>
